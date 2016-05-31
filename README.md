@@ -19,3 +19,18 @@ There there, your C&C is now ready to kill some zombies.
 Just run this daemon in the victim's machine.
 
     python run.py
+
+#ToDo
+1. C&C collect data from daemon
+    1.1 daemon collects data
+    1.2 daemon sends data
+    1.3 create table for victim's data (optional)
+    1.4 create page to show these data
+
+2. C&C respond with command
+    2.1 Create commands list in daemon
+    2.2 create C&C interface to send commands
+    2.3 put command in response
+    2.4 daemon executes command
+    2.5 daemon sends feedback
+    2.2 Set
