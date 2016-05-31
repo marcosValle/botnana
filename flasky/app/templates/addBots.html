@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+
+{% block title %}Flasky - {{ bot.nickname }}{% endblock %}
+
+{% block page_content %}
+	{{ bot.status }}
+{% endblock %}

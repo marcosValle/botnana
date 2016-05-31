@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+
+{% block title %}Bots list{% endblock %}
+
+{% block page_content %}
+<table>
+	<th>NICK</th>
+	<th>STATUS</th>
+
+	{% for bot in bots %}
+		<tr>
+			<td>{{ bot.nickname }}</td>
+			<td>{{ bot.status }}</td>
+			<td>{{ bot.last_seen }}</td>
+		<tr>
+	{% endfor %}
+
+</table>
+{% endblock %}
